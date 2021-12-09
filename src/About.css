@@ -1,0 +1,67 @@
+.about{
+    background-color: #1e363b;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23284736' fill-opacity='0.72' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+img.about__img{
+    border-radius: 12px;
+    width: 85%;
+}
+
+h1.about__heading{
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: start;
+    font-family: Montserrat, sans-serif;
+    font-size: 60px;
+}
+
+button.about.btn.pointer{
+    text-transform: capitalize;
+    width: 195px;
+    height: 55px;
+    font-size: 18px;
+    transition: .4s ease;
+    border: 2px solid #f89626;
+    background-color: #f89626;
+    
+}
+
+.about__button{
+    padding: 20px 0px; 
+}
+
+a.bottom__to__top{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    background-color: #f89626;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: .4s all ease; 
+    z-index: 1000;
+}
+a.bottom__to__top.active{
+    display: flex;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1024px){
+.p__color {
+    font-size: 15px!important;
+    }
+}
+@media only screen and (max-width: 425px){
+    button.about.btn.pointer {
+        text-transform: capitalize;
+        width: 165px;
+        height: 50px;
+        font-size: 13px;
+        transition: .4s ease;
+}
+}
